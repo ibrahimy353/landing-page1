@@ -22,8 +22,8 @@ a{
     justify-content: center;
 }
 
-/*Hero Section*/
-#hero {
+/*Header Section*/
+#header {
     background-image: url(./images/cloudy\ morning.jpg);
     background-size: cover;
     background-position: top center;
@@ -31,7 +31,7 @@ a{
     z-index: 1;
 }
 
-#hero::after{
+#header::after{
     content: '';
     position: absolute;
     left: 0;
@@ -42,14 +42,14 @@ a{
     opacity: .5;
     z-index: -1;
 }
-#hero .hero{
+#header .header{
     max-width: 1200px;
     margin:0 auto;
     padding: 0 50px;
     justify-content: flex-start;
 }
 
-#hero h1{
+#header h1{
     display: block;
     width: fit-content;
     font-size: 3rem;
@@ -60,18 +60,18 @@ a{
 
 }
 
-#hero h1:nth-child(1){
+#header h1:nth-child(1){
     animation-delay: 1s;
 }
-#hero h1:nth-child(2){
+#header h1:nth-child(2){
     animation-delay: 2s;
 }
-#hero h1:nth-child(3){
+#header h1:nth-child(3){
     animation-delay: 3s;
     color: red;
 }
 
-#hero h1 span{
+#header h1 span{
     position: absolute;
     top: 0;
     left: 0;
@@ -82,17 +82,17 @@ a{
     animation-delay: 1s;
 
 }
-#hero h1:nth-child(1) span{
+#header h1:nth-child(1) span{
     animation-delay: .5s;
 }
-#hero h1:nth-child(2) span{
+#header h1:nth-child(2) span{
     animation-delay: 1.5s;
 }
-#hero h1:nth-child(3) span{
+#header h1:nth-child(3) span{
     animation-delay: 2.5s;
 }
 
-#hero .cta{
+#header .cta{
     display: inline-block;
     padding: 10px 10px;
     color: white;
@@ -106,11 +106,98 @@ a{
     transition-property: background-color,color;
 }
 
-#hero .cta:hover {
+#header .cta:hover {
     color: white;
     background-color: crimson;
 }
-/* End Hero Section*/
+/* End header Section*/
+
+/*Servise section*/
+
+
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#services .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#services .section-title span {
+    color: crimson;
+}
+
+#services .service-top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+#services .section-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+#services .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    background-image: url(./images/laptop.png);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+
+
+}
+ /*overlay to make the content in pictures more visible*/
+#services .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    opacity: .1;
+    z-index: -1;
+}
+
+#services .service-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+  
+}
+
+#services .service-bottom .icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+    justify-items: center;
+
+}
+
+
+   /*overlay to make the content in pictures more visible*/
+
+/*END Servise section*/
+
 
 
 
@@ -132,5 +219,7 @@ a{
 
     }
 }
+
+
 
 /*End keyframes*/
