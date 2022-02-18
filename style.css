@@ -356,6 +356,65 @@ p{
 
 /*End About Section*/
 
+/*Contact Section*/
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact .contact-items{
+    width: 400px;
+}
+#contact .contact-items{
+    width: 350px;
+
+}
+
+#contact .contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 18px 0 black;
+    flex-direction: column;
+    transition: .3s ease;
+
+}
+
+#contact .contact-item:hover {
+    box-shadow: 0px 0px 5px 0 black;
+}
+#contact .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+#contact .contact-info h1{
+    font-size: 2rem;
+    font-weight: 500;
+
+}0
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+
+
+}
+
+
+
+/*End Contact Section*/
+
+
 /*keyframes*/
 @keyframes text_reveal_box{
     50%{
