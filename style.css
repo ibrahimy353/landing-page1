@@ -338,6 +338,9 @@ p{
 }
 #about .col-left .about-img{
     position: relative;
+    width: 100%;
+    height: 100%;
+    border: 10px solid  white;
 }
 
 #about .col-left .about-img::after{
