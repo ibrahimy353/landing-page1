@@ -262,7 +262,7 @@ p{
     width: 80%;
     margin: 20px auto;
     overflow: hidden;
-    border-radius: 1.5%;
+    border-radius: 10%;
 
 }
 
@@ -290,8 +290,8 @@ p{
 	color: white;
 }
 #projects .project-img {
-	flex-basis: 10%;
-	height: 15px;
+	flex-basis: 50%;
+	height: 300px;
 	overflow:hidden;
     position: relative;
 }
@@ -371,12 +371,12 @@ p{
 /*Contact Section*/
 #contact .contact{
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 12px;
     margin: 0 auto;
 }
 
 #contact .contact-items{
-    width: 400px;
+    width: 100%;
 }
 #contact .contact-items{
     width: 350px;
@@ -443,6 +443,7 @@ p{
 #footer .social-icon{
     display: flex;
     margin-bottom: 30px;
+
 }
 #footer .social-item{
     height: 50px;
@@ -451,7 +452,7 @@ p{
 }
 
 #footer .social-item img{
-    filter: grayscale(1);
+    filter:grayscale(1);
     transition: .3s ease;
 }
 #footer .social-item:hover img {
@@ -462,20 +463,9 @@ p{
 	font-size: 1.3rem;
 }
 
-
-
-
-
-
-
-
-
-
 /*End of footer*/
 
-
-
-/*keyframes*/
+  /*keyframes*/
 @keyframes text_reveal_box{
     50%{
         width: 100%;
@@ -494,6 +484,113 @@ p{
     }
 }
 
-
-
 /*End keyframes*/
+
+/*Media Query for Talet*/
+@media only screen and (min-width: 768px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title {
+		font-size: 6rem;
+	}
+
+
+	/* Header */
+	#header h1 {
+		font-size: 6rem;
+	}
+	/* End Header */
+
+	/* Services Section */
+	#services .service-bottom .service-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End Services Section */
+
+    /* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+	/* End Project */
+    /* About*/
+
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+#about .about .col-left .about-img::after{
+    left: -45px;
+    top: 34px;
+    width: 98%;
+    border: 10px solid crimson;
+}
+#about .col-right{
+    text-align: left;
+    padding: 30px;
+}
+#about .col-right h1{
+    text-align: left;
+}
+
+    /* End of about*/
+	/* contact  */
+#contact .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#contact .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#contact .contact-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#contact .contact-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#contact .contact-item .icon img {
+		object-fit: contain;
+	}
+	#contact .contact-item .contact-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+	/* End contact  */
+
+
+
+}
+
+/*End Media Query for Talet*/
