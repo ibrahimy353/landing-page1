@@ -444,7 +444,7 @@ p{
     display: flex;
     margin-bottom: 30px;
 }
-#social .social-item{
+#footer .social-item{
     height: 50px;
     width: 50px;
     margin: 0 5px;
@@ -452,7 +452,16 @@ p{
 
 #footer .social-item img{
     filter: grayscale(1);
+    transition: .3s ease;
 }
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+}
+
 
 
 
