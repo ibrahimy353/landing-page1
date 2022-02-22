@@ -7,7 +7,7 @@
 }
 
 html{
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -568,7 +568,7 @@ h1.section-title {
 	flex-direction: row;
     
 }
-#contact .contact-item .icon {
+#contact .contact-item .icon { 
 	height: 70px;
 	width: 70px;
 }
