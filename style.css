@@ -293,7 +293,10 @@ p{
 
 }
 
-
+#services .service-top{
+    width: 500px;
+    max-margin: 0 auto;
+}
 
 #services .service-bottom{
     display: flex;
@@ -305,7 +308,7 @@ p{
 }
 
 #services .service-item{
-    flex-basis: 80%;
+    flex-basis: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -696,8 +699,8 @@ h1.section-title {
     
 }
 #contact .contact-item .icon { 
-	height: 70px;
-	width: 70px;
+	height: 80px;
+	width: 80px;
 }
 #contact .contact-item .icon img {
 	object-fit: contain;
@@ -710,8 +713,20 @@ h1.section-title {
 }
 	/* End contact  */
 
-
-
 }
 
 /*End Media Query for Talet*/
+
+/*media query for desktop*/
+
+@media only screen and (min-width: 1200px){
+#services .service-bottom .service-item{
+    flex-basis: 22%;
+    margin: 1.5%;
+}
+}
+
+
+
+
+/*end of media query for desktop*/
