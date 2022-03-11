@@ -9,6 +9,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -119,7 +120,7 @@ p{
 	transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
-	left: 20%;
+	left: 0%;
 }
 #header .nav-list ul a {
 	font-size: 2.5rem;
@@ -604,7 +605,7 @@ p{
     }
     100%{
         opacity: 1;
-        transform: scale(1.5);
+        transform: scale(1.3);
 
     }
 }
