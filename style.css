@@ -119,7 +119,7 @@ p{
 	transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
-	left: 0%;
+	left: 20%;
 }
 #header .nav-list ul a {
 	font-size: 2.5rem;
@@ -177,7 +177,7 @@ p{
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
-	border: 3px solid white;
+	border: 3px solid crimson;
 	animation: hamburger_puls 1s ease infinite;
 }
 #header .hamburger .bar {
@@ -593,7 +593,22 @@ p{
 
 /*End of footer*/
 
+
   /*keyframes*/
+
+@keyframes hamburger_puls{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.5);
+
+    }
+}
+
 @keyframes text_reveal_box{
     50%{
         width: 100%;
@@ -721,11 +736,33 @@ h1.section-title {
 
 }
 
-/*End Media Query for Talet*/
+/*End Media Query for Tablet*/
 
 /*media query for desktop*/
 
 @media only screen and (min-width: 1200px){
+    /*header*/
+#header .hamburger {
+    display: none;
+}
+#header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+}
+#header .nav-list ul li{
+    display: inline-block;
+}
+#header .nav-list ul a{
+    font-size: 1.8rem;
+}
+
+#header .nav-list ul a::after{
+    display: none;
+}
+ /*end header*/
 #services .service-bottom .service-item{
     flex-basis: 22%;
     margin: 1.5%;
