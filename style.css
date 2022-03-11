@@ -340,7 +340,7 @@ p{
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .8;
+    opacity: .6;
     z-index: -1;
 }
 
@@ -713,10 +713,11 @@ h1.section-title {
     flex-direction: row;
 	justify-content: space-evenly;
 	margin: 0;
+   
 }
 #contact .contact-item {
-	width: 40%;
-	margin: 20px;
+	width: 30%;
+    margin: 0;
 	flex-direction: row;
     
 }
