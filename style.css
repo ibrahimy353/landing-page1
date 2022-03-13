@@ -133,7 +133,7 @@ p{
 	display: block;
 }
 
-     /*this code allows me whenever I hover i get the text at the background*/
+     /*this code allows me whenever I hover on the text, i get the text at the background*/
 #header .nav-list ul a::after {
 	content: attr(data-after);
 	position: absolute;
